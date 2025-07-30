@@ -1,0 +1,52 @@
+<section class="flex flex-col w-full items-start gap-14 py-0 relative">
+  <div class="flex flex-col md:flex-row items-start gap-[30px] relative w-full">
+    <!-- Left side with images -->
+    <div class="flex flex-wrap items-start gap-[20px_20px] relative flex-1 bg-color-grey-200 overflow-hidden">
+      <div class="relative w-full md:w-[949px]">
+        <div class="relative h-[671px]">
+          <img
+            class="absolute w-[703px] h-[496px] top-[175px] left-0 object-cover"
+            alt="Realme"
+            src="/realme-10.png"
+          />
+          <img
+            class="absolute w-[592px] h-[664px] top-0 left-[357px] object-cover"
+            alt="Rectangle"
+            src="/rectangle-1.png"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Right side with content -->
+    <div class="flex flex-col w-full md:w-[649px] items-start gap-[30px] px-0 py-[50px] relative bg-white">
+      <div class="p-0 space-y-[30px] w-full">
+        <h2 class="font-['Quicksand',Helvetica] font-semibold text-7xl tracking-[0] leading-[normal]">
+          <span class="text-[#2445e6]">Téléchargez</span>
+          <span class="text-black"> l'application !</span>
+        </h2>
+
+        <p class="font-['Quicksand',Helvetica] font-normal text-color-black-90 text-2xl tracking-[0] leading-[45px]">
+          Vivez une nouvelle experience du paiement en ligne conçue pour
+          vous.
+          <br />
+          C'est simple, rapide et sécurisé !
+        </p>
+
+        <div class="flex flex-wrap gap-2.5">
+          <button *ngFor="let option of downloadOptions" 
+                  class="flex w-[270px] h-[80.61px] items-center justify-center gap-[9.83px] p-[6.55px] bg-color-black-90 rounded-[13.11px] hover:bg-gray-800 transition-all duration-300">
+            <span class="font-['Quicksand',Helvetica] font-medium text-white text-[31.5px] tracking-[0] leading-[25.6px] whitespace-nowrap">
+              {{ option.name }}
+            </span>
+            <img
+              [class]="'relative ' + option.iconWidth + ' ' + option.iconHeight + ' object-cover'"
+              [alt]="option.name"
+              [src]="option.icon"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

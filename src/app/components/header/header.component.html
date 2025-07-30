@@ -1,0 +1,89 @@
+<header class="relative w-full bg-background-white">
+  <!-- Background image container -->
+  <div class="relative w-full overflow-hidden">
+    <img class="w-full object-cover" alt="Frame" src="/frame-91.png" />
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-[#00000073]"></div>
+  </div>
+
+  <!-- Navigation bar -->
+  <nav class="flex w-full items-center gap-2.5 px-[100px] py-2.5 absolute top-0 left-0 bg-[#0000008a] shadow-[0px_4px_4px_#0000001a]">
+    <!-- Logo -->
+    <img
+      class="w-[234.81px] h-[65px] object-cover"
+      alt="Logo mono"
+      src="/logo-mono-1.png"
+    />
+
+    <!-- Navigation items and buttons -->
+    <div class="flex h-[75px] items-center justify-end gap-5 px-5 py-[30px] flex-1">
+      <!-- Navigation menu -->
+      <nav class="flex gap-8">
+        <a *ngFor="let item of navItems" 
+           class="font-title font-bold text-background-white text-xl hover:text-blue-200 transition-colors cursor-pointer">
+          {{ item }}
+        </a>
+      </nav>
+
+      <!-- Sign up button -->
+      <button
+        class="h-[55px] px-[30px] py-2.5 rounded-[100px] border border-solid border-white bg-transparent hover:bg-white hover:text-black transition-all duration-300">
+        <span class="font-title font-bold text-background-white text-xl hover:text-black">
+          S'inscrire
+        </span>
+      </button>
+
+      <!-- Login button -->
+      <button
+        class="h-[55px] px-[30px] py-2.5 rounded-[100px] border border-solid border-white bg-transparent hover:bg-white hover:text-black transition-all duration-300">
+        <span class="w-[127px] font-title font-bold text-background-white text-xl hover:text-black">
+          Se connecter
+        </span>
+      </button>
+
+      <!-- User profile button -->
+      <button
+        class="flex w-[182px] h-[55px] items-center justify-end gap-5 p-2.5 rounded-[100px] border border-solid border-[#2445e6] bg-transparent hover:bg-[#2445e6] transition-all duration-300">
+        <span class="font-title font-bold text-background-white text-xl">
+          John Doe
+        </span>
+        <div class="w-10 h-10 rounded-full overflow-hidden">
+          <img src="/generic-avatar.svg" alt="John Doe" class="w-full h-full object-cover" />
+        </div>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero content -->
+  <div class="flex flex-col w-full max-w-[1528px] items-center justify-center gap-2.5 p-2.5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <h1 class="font-['Quicksand',Helvetica] font-bold text-background-white text-8xl tracking-[0] leading-[normal] text-center">
+      Simplifiez-vous la vie
+    </h1>
+
+    <p class="font-['Quicksand',Helvetica] font-bold text-background-white text-xl tracking-[0] leading-[normal] text-center">
+      Profitez de tous nos services financiers à des prix imbattables.
+    </p>
+
+    <div class="h-[23px] w-full max-w-[666px]"></div>
+
+    <button class="h-[97px] px-[50px] py-2.5 bg-app-primary rounded-[78px] flex items-center gap-5 hover:bg-blue-700 transition-all duration-300">
+      <span class="font-['Quicksand',Helvetica] font-bold text-background-white text-[32px] text-center tracking-[0] leading-[normal]">
+        Commencer dès maintenant
+      </span>
+      <div class="relative w-[46px] h-[46px]">
+        <div class="relative w-[31px] h-[31px] top-2 left-2">
+          <img
+            class="absolute w-[31px] h-1 top-[13px] left-0"
+            alt="Vector"
+            src="/vector-4.svg"
+          />
+          <img
+            class="absolute w-[17px] h-[31px] top-0 left-[13px]"
+            alt="Vector"
+            src="/vector.svg"
+          />
+        </div>
+      </div>
+    </button>
+  </div>
+</header>

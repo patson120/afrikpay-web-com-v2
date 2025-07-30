@@ -1,0 +1,65 @@
+<section class="flex w-full items-start py-0 relative border-t-2 border-solid border-[#0000001a]">
+  <div class="flex flex-col md:flex-row w-full">
+    <div class="flex flex-col w-full md:w-1/2 items-start gap-[35px] pt-[113px] pb-10 px-[100px] relative">
+      <h2 class="relative self-stretch mt-[-1.00px] font-['Quicksand',Helvetica] font-semibold text-7xl tracking-[0] leading-[normal]">
+        <span class="text-black">Restez focus sur votre </span>
+        <span class="text-[#2445e6]">business</span>
+        <span class="text-black">.</span>
+      </h2>
+
+      <p class="relative self-stretch font-['Quicksand',Helvetica] font-normal text-black text-[32px] tracking-[0] leading-[normal]">
+        Puis que votre business c'est ce qui compte le plus,
+        laissez-nous prendre en charge les paiements afin que vous puissiez
+        vous focaliser sur l'essentiel.
+      </p>
+
+      <p class="relative self-stretch font-['Quicksand',Helvetica] font-medium text-color-black-90 text-[32px] tracking-[0] leading-[normal]">
+        Nos experts vous accompagne pour garantir votre satisfaction.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-3 relative self-stretch w-full">
+        <div *ngFor="let stat of stats" 
+             class="bg-color-grey-200 rounded-[20px] overflow-hidden">
+          <div class="flex flex-col items-center justify-center gap-2.5 px-[30px] py-2.5">
+            <div class="relative w-fit font-['Quicksand',Helvetica] font-semibold text-app-primary text-[32px] tracking-[0] leading-[normal]">
+              {{ stat.value }}
+            </div>
+            <div class="relative w-fit font-['Quicksand',Helvetica] font-medium text-black text-[32px] tracking-[0] leading-[normal]">
+              {{ stat.label }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative self-stretch w-full h-5"></div>
+
+      <button class="flex items-center justify-center gap-[30px] px-2.5 py-[15px] bg-app-primary rounded-[100px] w-[542px] h-auto hover:bg-blue-700 transition-all duration-300">
+        <span class="relative font-['Quicksand',Helvetica] font-semibold text-background-white text-2xl tracking-[0] leading-5">
+          Devenir marchant
+        </span>
+        <div class="relative w-11 h-11">
+          <div class="relative w-[29px] h-[29px] top-[7px] left-[7px]">
+            <img
+              class="absolute w-[29px] h-1 top-[13px] left-0"
+              alt="Vector"
+              src="/vector-5.svg"
+            />
+            <img
+              class="absolute w-4 h-[29px] top-0 left-[13px]"
+              alt="Vector"
+              src="/vector-12.svg"
+            />
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div class="flex flex-col w-full md:w-1/2 items-center justify-center p-2.5 relative">
+      <img
+        class="relative w-full h-auto object-cover"
+        alt="Relaxing at home"
+        src="/relaxing-at-home-amico-1.png"
+      />
+    </div>
+  </div>
+</section>

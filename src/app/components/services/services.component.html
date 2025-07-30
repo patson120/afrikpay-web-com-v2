@@ -1,0 +1,49 @@
+<section class="flex flex-col w-full items-start gap-5 p-[100px]">
+  <h2 class="w-full font-['Quicksand',Helvetica] font-semibold text-color-black-90 text-[56px] text-center tracking-[0] leading-normal mt-[-1.00px]">
+    Nos services
+  </h2>
+
+  <p class="w-full font-['Quicksand',Helvetica] font-normal text-color-black-90 text-2xl text-center tracking-[0] leading-normal">
+    Nous mettons à votre disposition une gamme de fonctionalités qui
+    améliore votre quotidien
+  </p>
+
+  <div class="flex flex-wrap items-start justify-center gap-[30px] pt-10 pb-0 px-0 w-full">
+    <div *ngFor="let service of serviceCards" 
+         class="flex flex-col w-[486px] h-[423px] bg-color-grey-200 rounded-2xl overflow-hidden">
+      <div class="flex flex-col h-full p-[23.84px] gap-12">
+        <div class="flex items-center gap-[15.89px] w-full">
+          <div class="relative w-[125.36px] h-[115.93px] bg-neutral-100 rounded-[9.43px] overflow-hidden">
+            <img
+              class="absolute w-[125px] h-[116px] top-0 left-0 object-cover"
+              [alt]="service.title"
+              [src]="service.image"
+            />
+          </div>
+
+          <div class="flex-1 font-['Quicksand',Helvetica] font-normal text-color-black-90 text-[28.6px] leading-[28.6px]">
+            <span class="font-semibold leading-[23.8px]">
+              {{ service.title }}
+              <br />
+            </span>
+
+            <span class="text-[12.7px] leading-[23.8px]">
+              {{ service.subtitle }}
+            </span>
+          </div>
+        </div>
+
+        <p class="font-['Quicksand',Helvetica] font-normal text-black text-[19.1px] tracking-[0] leading-[31.8px] whitespace-pre-line">
+          {{ service.description }}
+        </p>
+
+        <div class="mt-auto flex items-center gap-[7.95px] p-[7.95px] cursor-pointer hover:opacity-80 transition-opacity">
+          <span class="font-['Quicksand',Helvetica] font-semibold text-app-primary text-[19.1px] tracking-[0] leading-[31.8px] underline whitespace-nowrap">
+            Découvrir
+          </span>
+          <lucide-icon name="arrow-right" class="w-[19.07px] h-[19.07px] text-app-primary"></lucide-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,39 @@
+<section class="w-full py-[100px] bg-orange flex flex-col items-center gap-[30px]">
+  <h2 class="w-full font-['Quicksand',Helvetica] font-semibold text-color-black-90 text-[56px] text-center tracking-[0] leading-[normal]">
+    Ils nous font confiance
+  </h2>
+
+  <p class="w-full font-['Quicksand',Helvetica] font-normal text-color-black-90 text-2xl text-center tracking-[0] leading-[normal]">
+    Votre satisfaction, notre priorité
+  </p>
+
+  <div class="w-full overflow-x-auto">
+    <div class="flex items-start gap-5 px-2.5 py-0 w-full min-w-max">
+      <div *ngFor="let partner of partnerLogosRow1" 
+           class="w-[332px] h-[239.94px] rounded-[5.94px] overflow-hidden shrink-0 bg-white">
+        <div class="p-0 h-full relative">
+          <img
+            class="absolute w-[337px] h-[337px] -top-14 -left-0.5 object-cover"
+            [alt]="partner.name"
+            [src]="partner.src"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-full overflow-x-auto">
+    <div class="flex items-start gap-5 px-2.5 py-0 w-full min-w-max">
+      <div *ngFor="let partner of partnerLogosRow2" 
+           class="w-[332px] h-[239.94px] rounded-[5.94px] overflow-hidden shrink-0 bg-white">
+        <div class="p-0 h-full relative">
+          <img
+            class="absolute w-[337px] h-[337px] -top-14 -left-0.5 object-cover"
+            [alt]="partner.name"
+            [src]="partner.src"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

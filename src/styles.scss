@@ -1,0 +1,23 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700");
+
+:root {
+  --app-primary: rgba(36, 69, 230, 1);
+  --background-white: rgba(255, 255, 255, 1);
+  --color-black-90: rgba(0, 0, 0, 1);
+  --color-grey-200: rgba(246, 245, 239, 1);
+  --orange: rgba(255, 194, 84, 1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', Helvetica, sans-serif;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
